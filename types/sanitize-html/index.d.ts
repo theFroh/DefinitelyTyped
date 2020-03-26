@@ -13,9 +13,7 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 
-///<reference types="htmlparser2"/>
-
-import { Options } from "htmlparser2";
+import { ParserOptions } from "htmlparser2";
 
 export = sanitize;
 
@@ -67,7 +65,7 @@ declare namespace sanitize {
     nonTextTags?: string[];
     selfClosing?: string[];
     transformTags?: { [tagName: string]: string | Transformer };
-    parser?: Options;
+    parser?: ParserOptions;
     disallowedTagsMode?: DisallowedTagsModes;
   }
 
